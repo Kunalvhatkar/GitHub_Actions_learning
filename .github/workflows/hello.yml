@@ -1,17 +1,11 @@
-#workflow name
-name : Hello
-
-#when Workflow run Trigger
-on: 
-  push:  
-      branches: [main]
-
-# Jobs inside a Workflow
+name: Hello
+on:
+  push:
+    branches:
+      - main
 jobs:
-  #name of Jobs
   greet:
-    runs-on: ubuntu-latest #github runner
-
+    runs-on: ubuntu-latest
     steps:
       - name: say heloo to users
         run: echo "Hello Kunal"
