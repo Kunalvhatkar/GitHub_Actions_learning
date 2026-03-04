@@ -9,7 +9,7 @@ on:
 # Jobs inside a Workflow
 jobs:
   #name of Jobs
-  Greet:
+  greet:
     runs-on: ubuntu-latest #github runner
 
     steps:
