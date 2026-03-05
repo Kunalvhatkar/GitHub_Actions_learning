@@ -1,0 +1,12 @@
+name: details
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+    details:
+      runs-on: ubuntu-24.04
+      steps:
+        - name: version of python, docker, git etc
+          run: docker --version && python --version && git --version
